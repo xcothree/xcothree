@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from nabil.xcothree.win/bind.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:52:28 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilmuust</title>
+    <link rel="stylesheet" type="text/css" href="css/bind.css">
+    <link rel="shortcut icon" href="img/logo%20web.jpg">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="../code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- loader -->
+    <div class="bg-loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h1><a href="index-2.html">NABIL</a></h1>
+            <ul>
+                <li><a href="index-2.html">Home</a></li>
+                <li><a href="setting.html">Setting</a></li>
+                <li><a href="ssh.html">SSH</a></li>
+                <li><a href="apache.html">Apache</a></li>
+                <li class="active"><a href="bind.html">Bind</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Apache -->
+    <section class="apache">
+        <div class="container">
+            <img src="bind/bing.jpg" alt="">
+            <h3>Install Bind</h3>
+            <h4 class="deskripsi">Langkah 1</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_1.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan:
+                    Install Bind dengan command apt-get install bind</p>
+            </div>
+            <h4 class="deskripsi">Langkah 2</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_3.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan:
+                    Setelah itu ketik systemctl status bind9, agar mengecek apakah</p>
+                    <p>Bind sudah berjalan atau belum.</p>
+            </div>
+            <h4 class="deskripsi">Langkah 3</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_4.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan:
+                    Ketik cd spasi / untuk keluar dari home</p>
+            </div>
+            <h4 class="deskripsi">Langkah 4</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_5.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan:
+                    Setelah itu ketik cd /var/www/html/ untuk membuat directoly</p> 
+                    <p>Virtual host yang kita buat</p>
+            </div>
+            <h4 class="deskripsi">Langkah 5</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_6.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan:
+                    Ketik ls untuk melihat file apa yang ada di dalam /var/www/html</p>
+            </div>
+            <h4 class="deskripsi">Langkah 6</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_7.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan:
+                    Buat file baru yang berbeda sesuai dengan virtual host yang kita</p>
+                    <p>Gunakan contohnya saya mengetik mkdir nabilxt322</p>
+            </div>
+            <h4 class="deskripsi">Langkah 7</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_9.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : 
+                    Setelah itu ketik ls lagi untuk melihat apakah file yang anda </p> 
+                    <p>tambahkan sudah tertambah</p>
+            </div>
+            <h4 class="deskripsi">Langkah 8</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_10.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Masuk ke dalam file tersebut dengan mengetik cd nama file, setelah</p>
+                <p>masuk kedalam file ketik index.html</p>
+            </div>
+            <h4 class="deskripsi">Langkah 9</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_11.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan :  Setelah masukkan sesuatu yang ingin ditampilkan di web</p>
+            </div>
+            <h4 class="deskripsi">Langkah 10</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_12.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Selanjutnya buka firefox yang ada pada debian dan ketik</p>
+                    <p>Nama alamat ip debian kalian/nama web kalian</p>
+            </div>
+            <h4 class="deskripsi">Langkah 11</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_13.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Agar mudah saat mencari web kita tanpa menggunakan alamat ip</p>
+                <p>Ketik cd /etc/apache2 pada debian</p>
+            </div>
+            <h4 class="deskripsi">Langkah 12</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_14.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Setelah ketik ls untuk melihat file apa saja yang</p>
+                <p>berada di apache 2, masuk ke dalam file yang bernama sites-available</p>
+                <p>dengan mengetikkan cd sites-available/</p>
+            </div>
+            <h4 class="deskripsi">Langkah 13</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_16.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan :
+                    Yang kalian harus lakukan adalah mengcopy file 000.default dengan</p>
+                <p>mengetikkan cp 000.default.conf misalnya nama filenya 22nabil.conf</p>
+            </div>
+            <h4 class="deskripsi">Langkah 14</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_17.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan :
+                    Setelah itu ketik ls untuk melihat isi file, nah sudah terlihat bahwa</p>
+                <p>isi file sudah terisi oleh file tadi</p>
+            </div>
+            <h4 class="deskripsi">Langkah 15</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_18.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Setelah itu masuk ke file tersebut dengan mengetikkan nano nama file.conf</p>
+            </div>
+            <h4 class="deskripsi">Langkah 16</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_19.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Pada bagian ini ubah pada bagian localhost menjadi</p>
+                    <p>Nama web kalian dan juga tambabahkan nama file tadi dibelakang</p> 
+                    <p>/var/www/html/ seperti ini /var/www/html/nabilxt322</p>
+            </div>
+            <h4 class="deskripsi">Langkah 17</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_20.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjalasan : Setelah sudah diganti seperti gambar diatas tekan control + x</p>
+                    <p>untuk keluar dari file</p> 
+            </div>
+            <h4 class="deskripsi">Langkah 18</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_21.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Setelah itu cp nama file.conf yang tadi sudah ditambahkan</p>
+                    <p>Dan dipindahkan kedalam sites-enabled </p> 
+            </div>
+            <h4 class="deskripsi">Langkah 18</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_21%20%20%20%20.html" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Setelah itu cp nama file.conf yang tadi sudah ditambahkan</p>
+                    <p>Dan dipindahkan kedalam sites-enabled </p> 
+            </div>
+            <h4 class="deskripsi">Langkah 19</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_22.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Ketik cp nama file.conf /etc/apache2/sites-enabled untuk</p>
+                    <p>mengpaste/menempel file.conf tadi</p> 
+            </div>
+            <h4 class="deskripsi">Langkah 20</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_23.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Lalu ketik cd .. untuk keluar dari site-available setelah keluar</p>
+                    <p>ketik cd sites-enabled untuk masuk </p> 
+            </div>
+            <h4 class="deskripsi">Langkah 21</h4>
+            <div class="apache1">
+            <img src="bind/Screenshot_24.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Ketik ls untuk melihat apakah file sudah tersalin atau belum</p> 
+            </div>
+            <h4 class="deskripsi">Langkah 22</h4>
+            <div class="apache1">
+            <img src="bind/hasil.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Jika sudah tersalin, buka firefox kalian dan ketik nama web kalian</p> 
+                    <p>pada firefox nanti akan muncul isi dari web yang kalian buat tadi.</p> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer>
+        <div class="container">
+            <small>Copyright &copy; 2022 - Nabil All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    <script text="text/javascript">
+        $(document).ready(function(){
+            $(".bg-loader").hide();
+        })
+    </script>
+</body>
+
+<!-- Mirrored from nabil.xcothree.win/bind.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:56:32 GMT -->
+</html>

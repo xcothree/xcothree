@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from davin.xcothree.win/Install dan setting Bind9.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:50:36 GMT -->
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DEBIAN</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index-2.html" class="logo">Debian</a>
+            <div class="navigation">
+              <ul class="menu">
+                <div class="close-btn"></div>
+                <li class="menu-item"><a href="index-2.html">Home</a></li>
+                <li class="menu-item">
+                  <a class="sub-btn" href="Debian.html">Debian<i class="fas fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li class="sub-item"><a href="Setting%20Repository.html">Setting Repository</a></li>
+                    <li class="sub-item"><a href="Install%20SSH%20dan%20Setting.html">Install SSH dan Setting</a></li>
+                    <li class="sub-item"><a href="Setting%20IP%20dan%20Network.html">Setting IP dan Network</a></li>
+                    <li class="sub-item"><a href="Install%20dan%20setting%20Apache.html">Install dan setting Apache</a></li>
+                    <li class="sub-item"><a href="Install%20dan%20setting%20Bind9.html">Install dan setting Bind9</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="About.html">About</a></li>
+                <li class="menu-item"><a href="Contact.html">Contact</a></li>
+              </ul>
+          </header>
+          <h5 class="deskripsi">Langkah 1</h5>
+          <img src="DB7.png" class = "modified-img">
+          <div class="kolom">
+            <p>Penjelasan :
+              ketikan apt-get install bind9
+            </p>
+          </div>
+          <h6 class="deskripsi">Langkah 2</h6>
+          <img src="B8.png" class = "modified-img">
+          <div class="kolom">
+            <p>Penjelasan :
+              ketikan systemctl status bind9
+            </p>
+          </div>
+          <h6 class="deskripsi">Langkah 3</h6>
+          <img src="bbb.png" class = "modified-img">
+          <div class="kolom">
+            <p>Penjelasan :
+              ketikan cd / -> ls -> mkdir nama anda -> ls -> cd nama anda -> nano index.html
+            </p>
+          </div>
+          <h6 class="deskripsi">Langkah 4</h6>
+          <img src="bbb2.png" class = "modified-img">
+          <div class="kolom">
+            <p>Penjelasan :
+              ketikan SMK TELKOM MALANG
+            </p>
+          </div>
+          <h6 class="deskripsi">Langkah 5</h6>
+          <img src="DB2.png" class = "modified-img">
+          <div class="kolom">
+            <p>Penjelasan :
+              ketikan cd / -> ls -> cd sites-available -> ls -> cp 000-default.conf nama dan kelas anda.conf -> lf -> nano nama dan kelas anda.conf
+            </p>
+          </div>
+          <h6 class="deskripsi">Langkah 6</h6>
+          <img src="DB4.png" class = "modified-img">
+          <div class="kolom">
+            <p>Penjelasan :
+              ganti webmaster@domain anda -> tambahkan di documentroot /var/www/html/nama kelas absen anda -> ketikan serveralias domain anda
+            </p>
+          </div>
+          <h6 class="deskripsi">Langkah 7</h6>
+          <img src="DB5.png" class = "modified-img">
+          <div class="kolom">
+            <p>Penjelasan :
+              ketikan cd .. -> cd sites-enabled -> ls -> cp nama absen.conf /etc/apache2/sites-enabled -> cd sites-available -> cd .. -> cd sites-available -> cp nama absen anda.conf /etc/apache2/sites-enabled -> cd .. -> cd sites-enabled -> ls -> rm 000-default.conf -> systemctl restart apache2 -> cd/var/www/html -> ls
+            </p>
+          </div>
+          <h6 class="deskripsi">Langkah 8</h6>
+          <img src="DB6.png" class = "modified-img">
+          <div class="kolom">
+            <p>Penjelasan :
+              ketikan ip anda
+            </p>
+          </div>
+          <h6 class="deskripsi">Langkah 9</h6>
+          <img src="m1.png" class = "modified-img">
+          <div class="kolom">
+            <p>Penjelasan :
+              ketikan cd /etc/bind
+            </p>
+          </div>
+          <h6 class="deskripsi">Langkah 10</h6>
+          <img src="m2.png" class = "modified-img">
+          <div class="kolom">
+            <p>Penjelasan :
+              ketikan ls -> cp db.local db.nama kelas anda -> ls -> cp db.127 db.ip terakhir -> ls -> cd .. -> cd /etc/bind -> nano named.conf.default-zones
+            </p>
+          </div>
+          <h6 class="deskripsi">Langkah 11</h6>
+          <img src="m3.png" class = "modified-img">
+          <div class="kolom">
+            <p>Penjelasan :
+              ketikan ganti ip anda dan nama kelas anda
+            </p>
+          </div>
+            <h6 class="deskripsi">Langkah 12</h6>
+            <img src="m4.png" class = "modified-img">
+            <div class="kolom">
+              <p>Penjelasan :
+                ketikan nano named.conf.default-zones -> nano db.nama kelas anda
+              </p>
+            </div>
+            <h6 class="deskripsi">Langkah 13</h6>
+            <img src="m5.png" class = "modified-img">
+            <div class="kolom">
+              <p>Penjelasan :
+                ketikan domain anda dan ip anda
+              </p>
+            </div>
+            <h6 class="deskripsi">Langkah 14</h6>
+            <img src="m6.png" class = "modified-img">
+            <div class="kolom">
+              <p>Penjelasan :
+                ketikan ls -> nano db.nama kelas anda -> nano named.conf.options
+              </p>
+            </div>
+            <h6 class="deskripsi">Langkah 15</h6>
+            <img src="m8.png" class = "modified-img">
+            <div class="kolom">
+              <p>Penjelasan :
+                ketikan ip anda dibawah forwaders
+              </p>
+            </div>
+            <h6 class="deskripsi">Langkah 16</h6>
+            <img src="m9.png" class = "modified-img">
+            <div class="kolom">
+              <p>Penjelasan :
+                ketikan systemctl restart bind9
+              </p>
+            </div>
+            <h6 class="deskripsi">Langkah 15</h6>
+            <img src="m10.png" class = "modified-img">
+            <div class="kolom">
+              <p>Penjelasan :
+                masuk ke browser dan ketikan domain anda
+              </p>
+            </div>
+    </body>

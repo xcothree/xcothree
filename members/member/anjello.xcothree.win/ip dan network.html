@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from anjello.xcothree.win/ip dan network.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:08:55 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Anjello</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="profil.html">Anjello</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index-2.html">Home</a></li>
+                    <li><a href="index-2.html">About</a></li>
+                    <li><a href="content.html">Content</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<section class="gambar1"
+id="support">
+<div class="layardalamsupport">
+    <center><h3>Setting Ip dan Network</h3></center>
+<div>
+    <h6>1.Ketik “nano /etc/network/interfaces</h6>
+    <img src="img%20ip/1.png">
+</div>
+<div>
+    <h6>hasil</h6>
+    <img src="img%20ip/1%20hasil.png">
+</div>
+<div>
+    <h6>2.Ketik “auto enp0s3” dan “iface enp0s3 inet static” lalu masukan ip address windows tetapi ubah bagian octet ke-4, subnetmask dan gateway (bisa lihat di command promt dengan mengetikan “ipconfig /all”) lakukan seperti gambar di bawah, lalu Klik ctrl+x,klik y, dan enter </h6>
+    <img src="img%20ip/2.png">
+</div>
+<div>
+    <h6>3.Ketik “systemctl restart networking” dan klik enter</h6>
+    <img src="img%20ip/3.png">
+</div>
+<div>
+    <h6>4.Masuk pada bagian Mechine</h6>
+    <img src="img%20ip/4.png">
+</div>
+<div>
+    <h6>5.Ganti NAT menjadi Bridged Adapter dan di bawahnya pilih WI-FI jika kalian menggunakan wifi
+    </h6>
+    <img src="img%20ip/5.png">
+</div>
+<div>
+    <h6>6.Cek ip debian apakah sudah benar seperti yang kita ganti sebelumnya dengan mengetikan ip –c a dan enter, jika masih belum benar ketik “systemctl restart networking” sampai ip berubah dengan benar
+    </h6>
+    <img src="img%20ip/6.png">
+</div>
+<div>
+    <h6>7.Ping ip windows pada terminal di debian dan ping ip debian pada command promt</h6>
+    <img src="img%20ip/7.png">
+    <img src="img%20ip/7.1.png">
+</div>
+<div>
+    <h6>8.Buka aplikasi putty dan akan muncul tampilan awal</h6>
+    <img src="img%20ip/8.png">
+</div>
+<div>
+    <h6>9.Masukkan ip debian dan klik open</h6>
+    <img src="img%20ip/9.png">
+</div>
+<div>
+    <h6>10.Login dengan memasukan username debian da isi password dengan user password</h6>
+    <img src="img%20ip/10.png">
+</div>
+<div>
+    <h6>11.Ketik “su”  dan masukan password root debian lalu klik enter</h6>
+    <img src="img%20ip/11.png">
+</div>
+
+</div>
+</section>
+<footer>
+    <div class="container">
+        <small>Copyright © 2022 Anjello Abigail</small>
+    </div>
+</footer>
+</body>
+
+<!-- Mirrored from anjello.xcothree.win/ip dan network.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:11:33 GMT -->
+</html>

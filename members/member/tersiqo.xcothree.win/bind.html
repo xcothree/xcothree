@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from tersiqo.xcothree.win/bind.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:54:34 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instal Bind9. | Tersiqo</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div  class="logo"><a href="#">Install Bind9.</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index-2.html" class="tbl-biru">Home</a></li>
+                    <li>&emsp;<a href="instal.html" class="tbl-biru">Instal</a></li>
+                    <li>&emsp;<a href="ssh.html" class="tbl-biru">SSH</a></li>
+                    <li>&emsp;<a href="apache.html" class="tbl-biru">Apache</a></li>
+                    <li>&emsp;<a href="bind.html" class="tbl-biru">Bind9</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <style>
+    img {
+        width: 500px;
+        height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        p {
+        font-family: 'comic sans ms';
+        text-indent: 420px;
+        }
+    </style>
+    <p>Langkah Pertama</p>
+    <img src="instaldebian/c1.png">
+    <p>ketik apt-get install bind9</p>
+    <p>Langkah Kedua</p>
+    <img src="instaldebian/c3.png">
+    <p>ketik systemctl status bind9</p>
+    <P>Langkah Ketiga</P>
+    <img src="instaldebian/c4.png">
+    <p>ketik cd /</p>
+    <p>Langkah Keempat</p>
+    <img src="instaldebian/c5.png">
+    <p>ketik cd /var/www/html</p>
+    <P>Langkah Kelima</P>
+    <Img src="instaldebian/c6.png">
+    <p>ketik ls</p>
+    <p>Langkah Keenam</p>
+    <img src="instaldebian/c7.png">
+    <p>buat file baru dengan mkdir nama</p>
+    <p>Langkah Ketujuh</p>
+    <img src="instaldebian/c8.png">
+    <p>ketik ls</p>
+    <p>Langkah Kedelapan</p>
+    <img src="instaldebian/c9.png">
+    <p>ketik cd nama file</p>
+    <p> Langkah Kesembilan</p>
+    <img src="instaldebian/c10.png">
+    <p>ketik nano index.html</p>
+    <p>Langkah Kesepuluh</p>
+    <img src="instaldebian/c11.png">
+    <p>ketik kode kode html untuk membuat website</p>
+    <p>Langkah Kesebelas</p>
+    <img src="instaldebian/c12.png">
+    <p>ketik cd /</p>
+    <p>Langkah Keduabelas</p>
+    <img src="instaldebian/c13.png">
+    <p>ketik cd /etc/apache2</p>
+    <p>Langkah Ketigabelas</p>
+    <img src="instaldebian/c14.png">
+    <p>ketik ls</p>
+    <p>Langkah Keempatbelas</p>
+    <img src="instaldebian/c15.png">
+    <p>ketik cd sites-available</p>
+    <p>Langkah Kelimabelas</p>
+    <img src="instaldebian/c16.png">
+    <p>ketik ls</p>
+    <p>Langkah Keenambelas</p>
+    <img src="instaldebian/c17.png">
+    <p>ketik cp 000-default.conf namafile.conf</p>
+    <p>Langkah Ketujuhbelas</p>
+    <img src="instaldebian/c18.png">
+    <p>ketik ls</p>
+    <p>Langkah Kedelapanbelas</p>
+    <img src="instaldebian/c19.png">
+    <p>ketik nano namafile.conf</p>
+    <p>Langkah Kesembilanbelas</p>
+    <img src="instaldebian/c20.png">
+    <p>ganti tulisan localhost dengan nama web anda dan tambahkan nama file anda di /var/www/html/namafile</p>
+    <p>Langkah Keduapuluh lalu ctrl+x</p>
+    <img src="instaldebian/c21.png">
+    <p>ketik cp namafile.conf /etc/apache2/sites-enabled</p>
+    <p>Langkah Keduapuluhsatu</p>
+    <img src="instaldebian/c22.png">
+    <p>ketik cd sites-enabled</p>
+    <p>Langkah Keduapuluhdua</p>
+    <img src="instaldebian/c23.png">
+    <p>ketik ls</p>
+    <p>Langkah Keduapuluhtiga</p>
+    <img src="instaldebian/c24.png">
+    <p>ketik rm 000-default.conf</p>
+    <p>Langkah Keduapuluhempat</p>
+    <img src="instaldebian/c25.png">
+    <p>ketik systemctl restart apache2</p>
+    <p>Langkah Keduapuluhlima</p>
+    <img src="instaldebian/c26.png">
+    <p>Langkah Keduapuluhenam</p>
+    <p>ketik dan masuk ke web anda</p>
+    <p>Langkah Keduapuluhtujuh</p>
+    <Img src="instaldebian/d2.png">
+    <p>ketik cd /etc/bind</p>
+    <p>Langkah Keduapuluhdelapan</p>
+    <img src="instaldebian/d3.png">
+    <p>ketik ls</p>
+    <p>Langkah Keduapuluhsembilan</p>
+    <img src="instaldebian/d4.png">
+    <p>ketik cp db.local db.namafile</p>
+    <p>Langkah Ketigapuluh</p>
+    <img src="instaldebian/d5.png">
+    <p>ketik dan ganti localhost menjadi tersiqo.com, lalu db.local menjadi db.namafile, lalu 127 menjadi 192, lalu db.127 ke db.160(sesuai ip debian anda</p>
+    <p>Langkah Ketigapuluhsatu</p>
+    <img src="instaldebian/d6.png">
+    <p>ketik nano db.namafile </p>
+    <p>Langkah Ketigapuluhdua</p>
+    <img src="instaldebian/d7.png">
+    <p>ketik dan ganti localhost menjadi tersiqo.com dan 127.0.0.1 menjadi 192.168.0.160(sesuai ip debian)</p>
+    </body>
+    
+<!-- Mirrored from tersiqo.xcothree.win/bind.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:56:35 GMT -->
+</html>

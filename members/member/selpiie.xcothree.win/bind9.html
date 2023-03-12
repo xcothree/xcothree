@@ -1,0 +1,150 @@
+<html>
+    
+<!-- Mirrored from selpiie.xcothree.win/bind9.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:46:58 GMT -->
+<head>
+        <title>Selpiie Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="setting.css">
+        <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/%40fortawesome/fontawesome-free%406.1.1/css/fontawesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;family=Kaushan+Script&amp;family=Lobster&amp;family=Poppins:wght@300;400;500;600;700&amp;family=Quicksand:wght@300&amp;family=Righteous&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="index-2.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="setting.html">Setting</a></li>
+                    <li><a href="SSH.html">SSH</a></li>
+                    <li><a href="Ip.html">Ip and Network</a></li>
+                    <li><a href="Apache.html">Apache2</a></li>
+                    <li><a href="bind9.html">Bind 9</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="images/menu.png" id="menu">
+        </div>
+        <section id="setting">
+            <div class="container">
+                <div class="title-text">
+                    <p>BIND 9</p>
+                    <h1>INSTALL BIND 9</h1>
+                </div>
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="bind9%20images/6--2.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 1</h2>
+                        <p>Keterangan : "Pertama, user diminta untuk menggunakan command <b>cd /etc/bind </b>untuk pergi ke bind. kemudian copy <b>db.127</b> ke <b>db.129</b>dengan command <b>cp db.127 db.129</b> </p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="bind9%20images/2-2.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 2</h2>
+                        <p>Keterangan : " Kemudian copy <b>db.local</b> ke <b>db.29selpiie</b> dengan menggunakan command <b>cp db.local db.29selpiie</b>
+                        </p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                        <img src="bind9%20images/3-1.png" style="float: left;">
+                        <img src="bind9%20images/3-2.png">
+                        <div class="mar10">
+                        <div class="kiri">
+                        <h2>STEP 3</h2>
+                        <p>Keterangan : "Berikutnya, user diminta untuk membuka <b>nano named.conf.default-zones</b> kemudian ubah localhost ke <b>selpiie.com , db.local ke db.29selpiie , 127 ke 192 dan db.127 ke db.129</b> lalu simpan</p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                        <img src="bind9%20images/4-1.png" style="float: left;">
+                        <img src="bind9%20images/4-2.png">
+                        <div class="mar10">
+                        <div class="kiri">
+                        <h2>STEP 4</h2>
+                        <p>Keterangan : Kemudian, user diminta untuk membuka <b>nano db.29selpiie</b> lalu ubah <b>localhost ke selpiie.com</b> dan <b>127.0.0.1 ke 192.168.1.129</b> lalu simpan</p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="bind9%20images/5.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 5</h2>
+                        <p>Keterangan : " Selanjutnya, user diminta untuk masuk ke <b>nano named.conf.options</b> lalu ubah <b>127.0.0.1 ke 192.168.1.129</b> lalu simpan
+                        </p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="bind9%20images/6.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 6</h2>
+                        <p>Keterangan : "Kemudian, restart bind9 dengan menggunakan command <b>systemctl restart bind9</b> . Kemudian gunakan command <b>nslookup</b> setelah itu masukkan <b>selpiie.com</b> untuk mengecek alamat ip
+                        </p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="bind9%20images/7.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 7</h2>
+                        <p>Keterangan : " Selanjutnya, user diminta untuk membuka <b>nano /etc/resolv.conf</b>. Kemudian tambahkan
+                            <br>
+                            nameserver 192.168.1.1
+                            <br>
+                            nameserver 118.98.111.42
+                            <br>
+                            nameserver 118.98.111.46
+                        </p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="bind9%20images/8.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 8</h2>
+                        <p>Keterangan : " Step terakhir, user diminta untuk menginputkan command <b>nslookup</b>untuk melihat perubahan.
+                        </p></div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="copyright">Copyright © 2022 - Selpiie. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px") {
+                    sideNav.style.right = "0"; 
+                    menu.src = "images/close.png"
+                }
+                else{
+                    sideNav.style.right = "-250px"
+                    menu.src = "images/menu.png"
+                }
+            }
+        </script>
+    </body>
+
+<!-- Mirrored from selpiie.xcothree.win/bind9.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:47:36 GMT -->
+</html>

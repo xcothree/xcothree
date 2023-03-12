@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from selpiie.xcothree.win/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:47:36 GMT -->
+<head>
+    <title>Selpiie Website</title>
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="setting.css">
+        <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/%40fortawesome/fontawesome-free%406.1.1/css/fontawesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;family=Kaushan+Script&amp;family=Lobster&amp;family=Poppins:wght@300;400;500;600;700&amp;family=Quicksand:wght@300&amp;family=Righteous&amp;display=swap" rel="stylesheet">
+        
+    </head>
+    
+
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="index-2.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="setting.html">Setting</a></li>
+                    <li><a href="SSH.html">SSH</a></li>
+                    <li><a href="Ip.html">Ip and Network</a></li>
+                    <li><a href="Apache.html">Apache2</a></li>
+                    <li><a href="bind9.html">Bind 9</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="menuBtn">
+            <img src="images/menu.png" id="menu">
+        </div>
+
+        <div class="title-text">
+            <p>CONTACT</p>
+            <h1>CONTACT ME</h1>
+        </div>
+
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="http://selpiie.xcothree.win/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+           <div>
+               <p class="copyright">Copyright © 2022 - Selpiie. All Rights Reserved.</p>
+           </div>
+</div>
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px";
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px") {
+            sideNav.style.right = "0"; 
+            menu.src = "images/close.png"
+        }
+        else{
+            sideNav.style.right = "-250px"
+            menu.src = "images/menu.png"
+        }
+    }
+</script>
+
+</body>
+
+<!-- Mirrored from selpiie.xcothree.win/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:47:36 GMT -->
+</html>

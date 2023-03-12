@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from devinta.xcothree.win/bind.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:23:16 GMT -->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Debian Tutorial | Devintaaur</title>
+    <link rel="stylesheet" type="text/css" href="tutor.css"/>
+    <!---Icon--->
+    <script src="../kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>   
+    <link rel='stylesheet' href='../cdn.jsdelivr.net/npm/bootstrap-icons%401.7.2/font/bootstrap-icons.css'>   
+
+</head>
+ 
+<body> 
+
+    <section>
+        <!--- navigasi --->
+        <nav>
+            <!--- logo --->
+            <a href="Lap.html" class="logo">Debian Tutorial</a>
+            <!--- menu --->
+            <ul>
+                <li><a href="Lap.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    <div id="main">
+        <div class="container">
+            <div class="row">  
+                                <div class="title">
+                                    <h2> Install dan Setting Bind 9
+                                    </h2> 
+                                   </div>
+                                   
+                                   <div class="title">
+                                    <h3>1. Nonaktif kan addres di interface</h3> 
+                                   </div>
+                                <!-- foto -->
+                                <div class="images-4">
+                                   <img src="bind%209%20img/non.png" width="800px">
+                                                                        
+                                  </div>
+                                   <p>Nonaktifkan ip dengan cara pagari ip debian kalian di file /network/interfaces dengan cara 'nano /etc/network/interfaces' jika kalian sudah sudah masuk pagari ip debian kalian mulai dari "auto enp0s3" sampai gateway.</p>
+
+                                   <div class="title">
+                                    <h3>2. Ubah Settingan (NAT) </h3> 
+                                   </div>
+                                <!-- foto -->
+                                <div class="images-4">
+                                   <img src="apache/bridge%20setting.png" width="800px">                   
+                                  </div>
+
+                                  <p>Ubah settingan network machine kalian dengan NAT adapter. Hal ini dilakukan agar kita dapat melakukan installasi bind9. Kemudian restart dan reboot debian.</p> 
+
+                                  <div class="title">
+                                    <h3>3. Install Bind 9</h3> 
+                                   </div>
+                                <!-- foto -->
+                                <div class="images-4">
+                                   <img src="bind%209%20img/1..png" width="800px">   
+                                  </div>
+                                  <p>Install Bind 9 dengan code 'apt-get install bind9' lalu klik Y untuk melanjutkan installasi. </p>
+                                
+
+                                  <div class="title">
+                                    <h3>4. Status Bind 9 </h3> 
+                                   </div>
+                                <!-- foto -->
+                                <div class="images-4">
+                                   <img src="bind%209%20img/bind%209%20status.png" width="800px">                   
+                                  </div>
+                                  <p>Pastikan Status bind 9 berjalan atau active.
+                                </p>
+
+                                <div class="title">
+                                    <h3>5. Menuju ke Folder Bind  </h3> 
+                                   </div>
+                                <!-- foto -->
+                                <div class="images-4">
+                                   <img src="bind%209%20img/10.png" width="800px">                   
+                                  </div>
+                                  <p>Pergi ke folder bind dengan perintah 'cd /etc/bind' lalu liat isi file dengan perintah 'ls'
+                                </p>
+
+                                <div class="title">
+                                    <h3>6. Isi Folder Bind  </h3> 
+                                   </div>
+                                <!-- foto -->
+                                <div class="images-4">
+                                   <img src="bind%209%20img/11%20ls.png" width="800px">                   
+                                  </div>
+                                  <p>Copy file db.local tapi dengan nama kalian dengan code 'cp db.local' --> 'db.namakalian'
+                                </p>
+                                <!-- foto -->
+                                <div class="images-4">
+                                    <img src="bind%209%20img/12%20db%20file%20baru.png" width="800px"> 
+
+                                
+                                <div class="title">
+                                    <h3>7. Copy file db (oktet4) </h3> 
+                                   </div>
+                                <!-- foto -->
+                                <div class="images-4">
+                                   <img src="apache/db%20oktet.png" width="800px">                   
+                                  </div>
+                                  <p>Copy file db.127 dengan db oktet4 ip debian kalian dengan code 'cp db.127' --> 'db.14'. setelah itu masuk ke file yang baru kalian buat.
+                                </p>
+
+                                <div class="title">
+                                    <h3>8. Setting file db.oktet </h3> 
+                                   </div>
+                                <!-- foto -->
+                                <div class="images-4">
+                                   <img src="bind%209%20img/21.png" width="800px">                   
+                                  </div>
+                                  <p> 
+                                    Ubah semua localhost menjadi nama domain kalian lalu ubah 1.0.0 yang di baris terakhir dengan ip kalian tetapi dari urutan oktet 4 sampai oktet 2 contoh ip saya adalah 192.168.1.14 menjadi 14.1.168 .
+                                  </p>
+                             
+
+                                <div class="title">
+                                    <h3>9. File named.conf.default-zones </h3> 
+                                   </div>
+                                <!-- foto -->
+                                <div class="images-4">
+                                   <img src="bind%209%20img/13.png" width="800px">                   
+                                  </div>
+                                  <p> Buka file named.conf.default-zone dengan code 'nano named.conf.default-zones'
+                                </p>
+
+                                <div class="title">
+                                    <h3>10. Tampilan File </h3> 
+                                   </div>
+                                <!-- foto -->
+                                <div class="images-4">
+                                   <img src="bind%209%20img/14.png" width="800px">                   
+                                  </div>
+                                  <p> Ubah localhost menjadi nama domain kalian lalu ubah db.local menjadi db.namakalian , ubah 127.in-addr.arpa dengan ip kalian oktet ke 2.3.4 lalu ubah db.127 dengan db.ip kalian.     </p>
+                                  
+                                <div class="title">
+                                    <h3>11. Masuk ke folder named.conf.option </h3> 
+                                   </div>
+                                <!-- foto -->
+                                <div class="images-4">
+                                   <img src="bind%209%20img/17.png" width="800px">                   
+                                  </div>
+                                   <!-- foto -->
+                                <div class="images-4">
+                                    <img src="bind%209%20img/18.png" width="800px">                   
+                                   </div>
+                                  <p> hilang kan tanda // di baris ( forwarders{ ) sampai baris ( }; ) lalu ubah 0.0.0.0; menjadi ip kalian seperti dicontoh.
+                                </p>
+
+                                <div class="title">
+                                    <h3>12. Masuk folder resolve.conf </h3> 
+                                   </div>
+                                <!-- foto -->
+                                <div class="images-4">
+                                   <img src="bind%209%20img/resolv.conf.png" width="800px">         
+                                  </div>
+                                  <p> Masukalah ke folder resolve.conf dengan menggunakan code 'nano /etc/resolve.conf'  kemudian masukkan domain dan ip debian kalian
+                                </p>
+
+                                <div class="title">
+                                    <h3>14. Cek di nslookup </h3> 
+                                   </div>
+                                <!-- foto -->
+                                <div class="images-4">
+                                   <img src="bind%209%20img/nslookup.png" width="800px">     
+                                </div>
+                                  <p> setelah masuk ke folder tadi ubah localhost pada baris Serveradmin menjadi nama domain kalian(nama domain boleh terserah asalkan ada tambahan .com/.id/yang lain), tambahkan slash(/) folder html kalian(di nomor 5) setelah html di baris Documentroot, lalu tambhakan serveralias www.domainkalian. Sehingga hasilnya seperti pada contoh dibawah ini.
+                                </p>
+                                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    
+</body>
+
+<!-- Mirrored from devinta.xcothree.win/bind.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:24:05 GMT -->
+</html>

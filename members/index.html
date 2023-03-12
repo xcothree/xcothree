@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from xcothree.win/members/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 17:49:33 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>XCOTHREE</title>
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="../../unpkg.com/aos%403.0.0-beta.6/dist/aos.css" />
+    <script src="../../kit.fontawesome.com/22a69e2285.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    background-color: #f2f2f2;
+    min-height: 150vh;
+    color: black;
+}
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+.center { text-align: center;}
+/* Navbar */
+.content-nav{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+    font-family: sans-serif;
+    margin: 0;
+}
+.navbar.sticky{
+    background: #bd2130;
+    padding: 20px 0;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.navbar .content-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo{
+    font-family: fantasy, sans-serif;
+    position: relative;
+    color: #262626;
+    font-weight: 500;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.logo img{
+    margin-right: 5px;
+    margin-top: 2px;
+}
+.navbar .listmenu{
+    display: inline-flex;
+}
+.listmenu li{
+    list-style: none;
+}
+.listmenu li a{
+    color: black;
+    font-size: 18px;
+    margin-left: 50px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    opacity: 100%;
+    cursor: pointer;
+}
+.listmenu li a:hover{
+    color: #FFFFFF;
+}
+.icon{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.listmenu .cancel-btn{
+    color: white;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+/* Home */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 170px;
+    margin-bottom: 100px;
+}
+.svg {
+    position: absolute;
+    z-index: -10;
+    top: -18rem;
+    right: -10rem;
+    transform: rotate(-14deg);
+}
+.isi{
+    text-align: center;
+}
+.JudulUtama{
+    padding-top: 70px;
+    font-size: 4rem;
+}
+.TUtama{
+    font-size: 1.5rem;
+}
+.home .image img{
+    width: 30vw;
+    position: relative;
+    right: 0;
+    border-radius: 20px;
+}
+.gambar {
+    animation: shake 2.7s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% { transform: translate(0px, 2px) rotate(0deg); }
+    5% { transform: translate(0px, 1px) rotate(0deg); }
+    15% { transform: translate(0px, 0px) rotate(0deg); }
+    25% { transform: translate(0px, -1px) rotate(0deg); }
+    50% { transform: translate(0px, -2px) rotate(0deg); }
+    75% { transform: translate(0px, -1px) rotate(0deg); }
+    85% { transform: translate(0px, 0px) rotate(0deg); }
+    95% { transform: translate(0px, 1px) rotate(0deg); }
+    100% { transform: translate(0px, 2px) rotate(0deg); }
+  }
+
+
+/*anggota*/
+.anggota{
+    padding-top: 9rem;
+    margin-bottom: 128px;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1320px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+.bungkus {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+.bungkusText {
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.teksJudul {
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.bungkusLord {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+@media (min-width: 1024px) {
+    .bungkusLord {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 1280px) {
+    .bungkusLord {
+        width: 33.333333%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.bungkusAnggota {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+@media (min-width: 767px) { 
+    .bungkusAnggota {
+        width: 33.333333%;
+    }
+ }
+@media (min-width: 1024px) { 
+    .bungkusAnggota {
+        width: 16.666667%;
+    }
+ }
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gambarPengurus {
+    width: 100%;
+}
+
+.block {
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+}
+
+.jarak {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
+}
+
+.teksNabil {
+    display: block;
+    font-weight: 650;
+    font-size: 1.45rem;
+    line-height: 1.95rem;
+    margin-bottom: 0.75rem;
+}
+.teksAnggota {
+    display: block;
+    font-weight: 650;
+    font-size: 1.45rem;
+    line-height: 1.95rem;
+    margin-bottom: 0.75rem
+}
+@media (min-width: 1024px) { 
+    .teksAnggota {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+ }
+@media (min-width: 1280px) { 
+    .teksAnggota {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+ }
+
+.teksPengurus {
+    color: rgb(255,0,0);
+    margin-bottom: 1rem;
+}
+
+.link {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: white;
+    background-color: #bd2130;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+}
+.link:hover {
+    opacity: 0.8;
+}
+
+/* Size */
+@media (max-width: 1200px){
+    .content-nav{
+        padding: 0 60px;
+    }
+}
+@media (max-width: 991px){
+    .content-nav {
+        padding: 0 30px;
+    }
+}
+@media (max-width: 767px){
+    body.disabled {
+        overflow: hidden;
+    }
+    .icon{
+        display: block;
+    }
+    .icon.hide{
+        display: none;
+    }
+    .navbar .listmenu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        background: #bd2130;
+        transition: all 0.3s ease;
+    }
+    .navbar.show .listmenu{
+        left: 0%;
+    }
+    .navbar .listmenu li{
+        margin-top: 45px;
+    }
+    .navbar .listmenu li a{
+        color: white;
+        font-size: 23px;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .navbar.show .listmenu li a{
+        margin-left: 0px;
+    }
+    .home{
+        flex-flow: column-reverse;
+    }
+    .home .image img{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    .isi{
+        margin-top: 2rem;
+    }
+    .JudulUtama{
+        font-size: 3rem;
+    }
+    .TUtama{
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 767px) { 
+    .svg {
+        transform: rotate(40deg);
+        width: 89%;
+        top: -27rem;
+        right: -16rem;
+    }
+ }
+@media (min-width: 1024px) { 
+    .svg {
+        transform: rotate(60deg);
+        width: 89%;
+        top: -16rem;
+        right: -29rem;
+    }
+ }
+ 
+/*Footer*/
+.footfix{
+    position: fixed;
+    right: 0;
+    bottom: 24px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.footfix a{
+    margin-left: 4px;
+}
+.footdwn{
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+}
+.footdwn a{text-decoration: none;}
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="content-nav">
+            <div class="logo">
+                <img src="icon.png" width="25" height="25">
+                <p>XCOTHREE</p>
+            </div>
+            <ul class="listmenu">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="../index.html">Members</a></li>
+                <li><a href="../about/index.html">Contact</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!--Home-->
+    <section class="home">
+        <div>
+            <span class="svg">
+                <img src="svgnyaMoklet.svg" alt="">
+            </span>
+        </div>
+        <div class="isi">
+            <h1 class="JudulUtama">XCOTHREE Members</h1>
+            <p class="TUtama">Member of XT3 SMK Telkom Malang</p>
+        </div>
+        <div class="image">
+            <img class="gambar" src="XCOTHREE.png" alt="">
+        </div>
+    </section>
+
+    <!-- Anggota -->
+    <section class="anggota">
+        <div class="container">
+            <div class="bungkus">
+                <div class="bungkusText">
+                    <h2 class="teksJudul">Pengurus Kelas</h2>
+                </div>
+            </div>
+        </div>
+            <!-- Pengurus -->
+            <div class="bungkusLord">
+                <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                    <img class="gambarPengurus" src="vektor.jpg" alt="">
+                    <div class="jarak">
+                        <h1 class="teksNabil">22. Nabil Tri Taufiq</h1>
+                        <h3 class="teksPengurus">Ketua Kelas</h3>
+                        <a href="./member/nabil.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex">
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">09. Dewa Gede Oka</h2>
+                            <h4 class="teksPengurus">Wakil Ketua Kelas</h4>
+                            <a href="./member/gedeganteng.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">06. Desy Dwi Puspita</h2>
+                            <h4 class="teksPengurus">Sekretaris 1</h4>
+                            <br>
+                            <a href="./member/desy.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">30. Selvy Nur Khoffifa</h2>
+                            <h4 class="teksPengurus">Sekretaris 2</h4>
+                            <br>
+                            <a href="./member/selpiie.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">28. Santi Laelatul M.</h2>
+                            <h4 class="teksPengurus">Bendahara 1</h4>
+                            <br>
+                            <a href="./member/santi.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">08. Devinta Aurelia</h2>
+                            <h4 class="teksPengurus">Bendahara 2</h4>
+                            <br>
+                            <a href="./member/devinta.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">36. Zaky Leo Wardana</h2>
+                            <h4 class="teksPengurus">Admin Website</h4>
+                            <a href="./member/zaky.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anggota -->
+
+            <div class="container">
+                <div class="bungkus">
+                    <div class="bungkusText">
+                        <h2 class="teksJudul">Anggota Kelas</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">01. Ahmad Haris Dawa' UQ</h2>
+        
+                            <a href="./member/ahmad.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">02.Alifio Rizqullah FE</h2>
+                            <a href="./member/alifio.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">03. Anjello Abigail AS</h2>
+                            <a href="./member/anjello.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">04. Annisa Rachmanti</h2>
+                            <a href="./member/annisa.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">05. Ariel Kurniawan</h2>
+                            <a href="./member/ariel.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">06. Desy Dwi Puspita</h2>
+        
+                            <a href="./member/desy.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">07. Devin Nizar F.</h2>
+        
+                            <a href="./member/devin.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">08. Devinta Aurelia</h2>
+                            <a href="./member/devinta.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">09. Dewa Gede Oka</h2>
+                            <a href="./member/gedeganteng.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">10. Fearent Aurellia PS</h2>
+                            <a href="./member/fearent.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">11. Frania Ayang J.</h2>
+                            <a href="./member/frania.xcothree.win/" target="_blank"><button class="link">Tidak ada</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">12. Fransisca Salsabila A.</h2>
+        
+                            <a href="./member/fransisca.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">13. Juang Muhammad Zulqarnain</h2>
+        
+                            <a href="./member/juang.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">14. Karimahtus S.</h2>
+                            <a href="./member/slytherin.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">15. Mas Alfiyyah PD</h2>
+                            <a href="./member/alfiyah.xcothree.win/" target="_blank"><button class="link">Tidak ada</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">16. Meylani Cahya I.</h2>
+                            <a href="./member/meylani.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">17. Michael Davin</h2>
+                            <a href="./member/davin.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">18 Mohammad Fildan Y</h2>
+        
+                            <a href="./member/fildan.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">19. Mohammad Rizki DS</h2>
+        
+                            <a href="./member/rizki.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">20. Muhammad Anantha MR</h2>
+                            <a href="./member/anantha.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">21. Nabigh Nailur R.</h2>
+                            <a href="./member/nabigh.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">22. Nabil Tri Taufiq</h2>
+                            <a href="./member/nabil.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">23. Nathanael Adriano S.</h2>
+                            <a href="./member/adrianoads.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">24. Nayla Erina DH</h2>
+        
+                            <a href="./member/nayla.xcothree.win/" target="_blank"><button class="link">Tidak ada</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">25. Nur Mahdi SA.</h2>
+        
+                            <a href="./member/mahdi.xcothree.win/" target="_blank"><button class="link">Tidak ada</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">26. Richardo Emmanuel</h2>
+        
+                            <a href="./member/richardo.xcothree.win/" target="_blank"><button class="link">Tidak ada</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">27. Rico Shandika JA</h2>
+                            <a href="./member/rico.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">28. Santi Laelatul M.</h2>
+                            <a href="./member/santi.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">29. Satrio Pratama PA</h2>
+                            <a href="./member/satrio.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">30. Selvy Nur Khofifa</h2>
+                            <a href="./member/selpiie.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">31. Shelo Mita YA.</h2>
+        
+                            <a href="./member/shelo.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">32. Tersiqo Alfarezel</h2>
+                            <a href="./member/tersiqo.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">33. Tri Bagus RZ.</h2>
+                            <a href="./member/bagus.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">34. Wrisa Karumia</h2>
+                            <a href="./member/wrisa.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">35. Yanuar Candra M.</h2>
+                            <a href="./member/candra.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bungkusAnggota">
+                    <div class="block" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="gambarPengurus" src="vektor.jpg" alt="">
+                        <div class="jarak">
+                            <h2 class="teksAnggota">36. Zaky Leo Wardana</h2>        
+                            <a href="./member/zaky.xcothree.win/" target="_blank"><button class="link">Website</button></a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <!--Footer-->
+    <footer>
+        <!--Window-->
+        <div class="footfix">
+            <span>Made by</span>
+            <a href="xcothree.html"><img src="icon.png" alt="xcothree" width="24" height="24"></a>
+        </div>
+        <!--Fixed-->
+        <div class="footdwn">
+            <p>Copyrights © 2022 Allrights reserved by <a href="xcothree.html" target="_blank">XCOTHREE</a></p>
+        </div>
+    </footer>
+
+    <!-- Add JavaScript-->
+    <script src="script.js"></script>
+    <!-- AOS -->
+    <script src="../../unpkg.com/aos%403.0.0-beta.6/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+<!-- Mirrored from xcothree.win/members/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 17:50:31 GMT -->
+</html>

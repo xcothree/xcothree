@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from xcothree.win/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 17:40:25 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>XCOTHREE</title>
+    <link rel="shortcut icon" href="icon.png">
+    <link href="../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
+    <script src="../kit.fontawesome.com/22a69e2285.js" crossorigin="anonymous"></script>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    background-color: #f2f2f2;
+    min-height: 150vh;
+    color: black;
+}
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+.center{text-align: center;}
+.mar10{margin: 10px;}
+
+/*Fade Animation*/
+.fade{
+    animation-name: fade; 
+    animation-duration: 1s;
+}
+@keyframes fade {
+    from {opacity: .6;}
+    to {opacity: 1;}
+}
+
+/* Navbar */
+.content-nav{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+    font-family: sans-serif;
+    margin: 0;
+}
+.navbar.sticky{
+    background: #bd2130;
+    padding: 20px 0;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.navbar .content-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo{
+    font-family: fantasy, sans-serif;
+    position: relative;
+    color: #262626;
+    font-weight: 500;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+}
+.logo img{
+    margin-right: 5px;
+    margin-top: 2px;
+}
+.navbar .listmenu{
+    display: inline-flex;
+}
+.listmenu li{
+    list-style: none;
+}
+.listmenu li a{
+    color: black;
+    font-size: 18px;
+    margin-left: 50px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    opacity: 100%;
+    cursor: pointer;
+}
+.listmenu li a:hover{
+    color: #fff;
+}
+.icon{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.listmenu .cancel-btn{
+    color: white;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+/* Home */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 200px;
+    margin-bottom: 100px;
+}
+.isi{
+    text-align: center;
+}
+.JudulUtama{
+    font-size: 4rem;
+}
+.TUtama{
+    font-size: 1.5rem;
+}
+.home .image img{
+    width: 35vw;
+    height: 24vw;
+    position: relative;
+    right: 0;
+    border-radius: 20px;
+}
+.active {
+    background-color: #717171;
+}
+.shapimg{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 76px;
+    z-index: 0;
+    left: 380px;
+    overflow: hidden;
+    background-size: cover;
+    right: 0;
+
+}
+
+/*Tentang Kita*/
+.About{
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 160px;
+}
+.tentang{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 10px;
+    background-color: #b3ffff;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.tentang button{
+    background-color: #fff;
+    font-size: 1rem;
+    color: #00152e;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 10px;
+    transition: all 0.2s linear;
+}
+.tentang button:hover{
+    background-color: #0d6efd;
+    transform: scale(1.1);
+}
+
+/*kontenpilihan*/
+.kontenpilihan{
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 160px;
+}
+.kotak{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ko{
+    margin: 10px;
+    max-width: 325px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+.ko:hover{box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);}
+.kontenpilihan button{
+    background-color: #fff;
+    font-size: 1rem;
+    color: #00152e;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 10px;
+    transition: all 0.2s linear;
+}
+.kontenpilihan button:hover{
+    background-color: rgb(255, 0, 102);
+    transform: scale(1.1);
+}
+
+/*contact*/
+.contact{
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 40px;
+}
+.conus{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #b3ffff;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    max-width: 480px;
+}
+.conus a{
+    text-decoration: none;
+    color: rgb(0, 60, 255);
+}
+.fa-instagram{color: black;}
+.fa-youtube{color: red;}
+.conform{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #b3ffff;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    max-width: 480px;
+}
+.formu{font-weight: 700;}
+
+/*Footer*/
+.footfix{
+    position: fixed;
+    right: 0;
+    bottom: 24px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.footfix a{
+    margin-left: 4px;
+}
+.footdwn{
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+}
+.footdwn a{text-decoration: none;}
+
+/* Size */
+@media (max-width: 1200px){
+    .content-nav{
+        padding: 0 60px;
+    }
+}
+@media (max-width: 991px){
+    .content-nav {
+        padding: 0 30px;
+    }
+    .shapimg{display: none;}
+}
+@media (max-width: 767px){
+    body.disabled {
+        overflow: hidden;
+    }
+    .icon{
+        display: block;
+    }
+    .icon.hide{
+        display: none;
+    }
+    .navbar .listmenu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        background: #bd2130;
+        transition: all 0.3s ease;
+    }
+    .navbar.show .listmenu{
+        left: 0%;
+    }
+    .navbar .listmenu li{
+        margin-top: 45px;
+    }
+    .navbar .listmenu li a{
+        color: white;
+        font-size: 23px;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .navbar.show .listmenu li a{
+        margin-left: 0px;
+    }
+    .home{
+        flex-flow: column-reverse;
+    }
+    .home .image img{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .isi{
+        margin-top: 2rem;
+    }
+    .JudulUtama{
+        font-size: 3rem;
+    }
+    .TUtama{
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+    .shapimg{display: none;}
+}
+</style>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="content-nav">
+            <a class="logo" href="index.html">
+                <img src="icon.png" width="25" height="25">
+                <p>XCOTHREE</p>
+            </a>
+            <ul class="listmenu">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="about/index.html">About</a></li>
+                <li><a href="members">Members</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!--Home-->
+    <nav class="home" id="home">
+        <div class="isi">
+            <h1 class="JudulUtama">XCOTHREE's Website</h1>
+            <p class="TUtama">Welcome to Our Class Website. XT3 SMK Telkom Malang</p>
+        </div>
+        <img src="blob.svg" class="shapimg" alt="shapeimage">
+        <div class="image">
+            <div class="gambar fade"><img src="image.jpg"></div>
+            <div class="gambar fade"><img src="image1.jpg"></div>
+            <div class="gambar fade"><img src="image2.jpg"></div>
+        </div>
+    </nav>
+
+    <!--About Us-->
+    <nav class="About" data-aos="fade-up">
+        <div>
+            <H1 class="center mar10">Tentang Kita</H1>
+            <div class="tentang">
+                <p>Selamat datang di website Kita. Website ini merupakan website milik kelas XTKJ3 yang berasal dari SMK
+                Telkom Malang. Website ini dibuat dengan tujuan melaksanakan tugas Produktif TKJ</p>
+                <a href="about/index.html" style="text-decoration: none;"><button>Lebih Banyak →</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!--kontenpilihan-->
+    <nav class="kontenpilihan"  data-aos="zoom-in">
+        <h1>Konten Pilihan</h1>
+        <div class="kotak">
+            <a href="http://nabil.xcothree.win/" style="text-decoration: none;"><div class="ko">
+                <img src="nabil.png" width="300">
+                <h3 style="color: black;">1. Nabil</h3>
+            </div></a>
+            <a href="http://rizki.xcothree.win/" style="text-decoration: none;"><div class="ko">
+                <img src="rizki.png" width="300">
+                <h3 style="color: black;">2. Rizki</h3>
+            </div></a>
+            <a href="http://zaky.xcothree.win/" style="text-decoration: none;"><div class="ko">
+                <img src="zaky.png" width="300">
+                <h3 style="color: black;">3. Zaky</h3>
+            </div></a>
+            <a href="http://davin.xcothree.win/" style="text-decoration: none;"><div class="ko">
+                <img src="davin.png" width="300">
+                <h3 style="color: black;">4.Davin</h3>
+            </div></a>
+        </div>
+        <a href="members" style="text-decoration: none;"><button>Lebih Banyak →</button></a>
+    </nav>
+
+    <!--Contact-->
+    <nav class="contact"  data-aos="fade-up" id="contact">
+        <h1 class="center mar10">Contact</h1>
+        <div class="conus">
+            <p class="center">Contact us at</p>
+            <a href="https://www.instagram.com/xconthree/" style="margin-right: 10px;"><span class="fa fa-instagram"></span>@xconthree</a>
+            <a href="https://www.youtube.com/channel/UC__KKkAHw44vesNWDpny-QQ"><span class="fa fa-youtube">𝐗𝐓ransform.𝟑R</span></a>
+            <div class="email">Nabil(Ketua): <a itemprop="email" href="mailto:nabil_taufik_30tkj@student.smktelkom-mlg.sch.id">nabil_taufik_30tkj@student.smktelkom-mlg.sch.id</a></div>
+            <div class="email">Desy(Sekertaris): <a itemprop="email" href="mailto:desy_puspita_30tkj@student.smktelkom-mlg.sch.id">desy_puspita_30tkj@student.smktelkom-mlg.sch.id</a></div>
+            <div class="email">Zaky(Admin): <a itemprop="email" href="mailto:nabil_taufik_30tkj@student.smktelkom-mlg.sch.id">zaky_wardana_30tkj@student.smktelkom-mlg.sch.id</a></div>
+        </div>
+        <div class="conform">
+            <p class="center">or fill the form below</p>
+            <form action="https://formspree.io/f/myyolaqd" method="POST">
+                <label>
+                    Nama: 
+                    <input type="text" name="nama">
+                </label><br>
+                <label>
+                    Email:
+                    <input type="email" name="email">
+                </label><br>
+                <label>
+                    Pesan:
+                    <textarea name="message"></textarea>
+                </label><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </nav>
+
+    <!--Footer-->
+    <footer>
+        <!--Window-->
+        <div class="footfix">
+            <span>Made by</span>
+            <a href="xcothree.html"><img src="icon.png" alt="http://xcothree" width="24" height="24"></a>
+        </div>
+        <!--Fixed-->
+        <div class="footdwn">
+            <p>Copyrights © 2022 Allrights reserved by <a href="index.html" target="_blank">XCOTHREE</a></p>
+        </div>
+    </footer>
+
+    <!-- Add JavaScript-->
+    <script src="script.js"></script>
+    <script src="slide.js"></script>
+    <script src="../unpkg.com/aos%402.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+<!-- Mirrored from xcothree.win/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 17:42:39 GMT -->
+</html>

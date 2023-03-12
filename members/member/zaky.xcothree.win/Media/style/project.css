@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Poppins:wght@500;600;700;800&amp;display=swap");
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    background-color: #18002e;
+    min-height: 110vh;
+    color: white;
+}
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+/* Navbar */
+.content-nav{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+    font-family: "Poppins", sans-serif;
+}
+.navbar.sticky{
+    background: #000;
+    padding: 20px 0;
+    box-shadow: 0 0.5rem 0.5rem rgba(255, 255, 255, 0.05);
+}
+.navbar .content-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo{
+    position: relative;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+}
+.navbar .listmenu{
+    display: inline-flex;
+}
+.listmenu li{
+    list-style: none;
+}
+.listmenu li a{
+    color: white;
+    font-size: 18px;
+    margin-left: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.5s ease;
+    opacity: 100%;
+}
+.listmenu li a:hover{
+    color: #0a84ff;
+}
+.icon{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.listmenu .cancel-btn{
+    color: white;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+/* Home */
+.home{
+    padding-top: 200px;
+}
+.content{
+    text-align: center;
+}
+.JudulUtama{
+    font-size: 35px;
+}
+.home .content .La{
+    font-family: "Poppins", sans-serif;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    color: #350062;
+    background-color: wheat;
+}
+.La:hover{
+    transform: scale(1.1);
+}
+
+/* Size */
+@media (max-width: 1200px){
+    .content-nav{
+        padding: 0 60px;
+    }
+}
+@media (max-width: 991px){
+    .content-nav {
+        padding: 0 30px;
+    }
+}
+@media (max-width: 767px){
+    body.disabled {
+        overflow: hidden;
+    }
+    .icon{
+        display: block;
+    }
+    .icon.hide{
+        display: none;
+    }
+    .navbar .listmenu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        background: #1b0033;
+        transition: all 0.3s ease;
+    }
+    .navbar.show .listmenu{
+        left: 0%;
+    }
+    .navbar .listmenu li{
+        margin-top: 45px;
+    }
+    .navbar .listmenu li a{
+        color: white;
+        font-size: 23px;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .navbar.show .listmenu li a{
+        margin-left: 0px;
+    }
+}

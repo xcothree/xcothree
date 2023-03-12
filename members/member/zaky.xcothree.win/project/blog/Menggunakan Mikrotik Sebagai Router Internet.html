@@ -1,0 +1,218 @@
+<html>
+
+
+<!-- Mirrored from zaky.xcothree.win/project/blog/Menggunakan Mikrotik Sebagai Router Internet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:53:15 GMT -->
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+*{max-width: 20cm;}
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:42.55pt 49.55pt 2.0cm 49.65pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-ID style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:14.0pt;line-height:107%'>Menggunakan Mikrotik Sebagai Router
+Internet</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US
+style='font-size:12.0pt;line-height:107%'>Disini saya akan membagikan cara
+setting Mikrotik sebagai router internet. Sebelum setting mikrotik, pastikan
+seri mikrotik anda memiliki fungsi wireless supaya bisa difungsikan sebagai
+router wireless. </span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US
+style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:12.0pt;line-height:107%'>Sebagai contoh, disini saya
+menggunakan Mikrotik dengan seri RB951Ui-2<sup>nD</sup></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:12.0pt;line-height:107%'><img width=439 height=222
+id="Picture 5"
+src="Menggunakan%20Mikrotik%20Sebagai%20Router%20Internet_files/image001.jpg"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-size:12.0pt;line-height:107%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:12.0pt;line-height:107%'>Pertama,
+buka winbox untuk masuk kedalam mikrotik dengan memasukkan IPv6 milik mikrotik.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:12.0pt;
+line-height:107%'><img width=602 height=338 id="Picture 1"
+src="Menggunakan%20Mikrotik%20Sebagai%20Router%20Internet_files/image002.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:12.0pt;
+line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:12.0pt;
+line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:12.0pt;
+line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-size:12.0pt;line-height:107%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:12.0pt;line-height:107%'>Setelah
+masuk kedalam mikrotik, reset konfigurasi mikrotik untuk menghapus semua
+konfigurasi mikrotik dengan cara pergi ke System &lt; Reset Configuration .</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:12.0pt;
+line-height:107%'><img width=602 height=338 id="Picture 4"
+src="Menggunakan%20Mikrotik%20Sebagai%20Router%20Internet_files/image003.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:12.0pt;
+line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-size:12.0pt;line-height:107%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:12.0pt;line-height:107%'>Selanjutnya
+ubah nama mikrotik anda di System &lt; Identity . disini saya menggunakan nama
+Mikrotik 36</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:12.0pt;
+line-height:107%'><img width=602 height=338 id="Picture 6"
+src="Menggunakan%20Mikrotik%20Sebagai%20Router%20Internet_files/image004.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:12.0pt;
+line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-size:12.0pt;line-height:107%'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:12.0pt;line-height:107%'>Lalu
+aktifkan wireless di menu wireless dengan klik wireless yang tersedia lalu klik
+centang. Selanjutnya, klik dua kali wireless yang aktif lalu pindah ke menu
+network lalu ubah pengaturannya sesuai dengan yang kamu inginkan. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:12.0pt;
+line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-size:12.0pt;line-height:107%'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:12.0pt;line-height:107%'>Tambahkan
+ip di IP &lt; Addresses lalu tambahkan ip di interface wlan 1.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:12.0pt;
+line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-size:12.0pt;line-height:107%'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:12.0pt;line-height:107%'>Berikutnya,
+pergi ke IP &lt; DHCP Client lalu tambahkan ether 1.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-size:12.0pt;line-height:107%'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:12.0pt;line-height:107%'>Selanjutnya,
+pergi ke IP &lt; DHCP Server lalu klik DHCP Setup. Pada menu DHCP Setup pilih
+interface wlan1, lalu anda bisa klik next terus sampai bagian lease time,
+dibagian ini anda bisa menggantinya sesuai selera.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:12.0pt;
+line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-size:12.0pt;line-height:107%'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:12.0pt;line-height:107%'>Terakhir,
+pergi ke IP &lt; Firewall, ubah Out Interface ke Ether 1, dan pergi ke Action
+dan ubah ke masquerade.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-size:12.0pt;line-height:107%'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:12.0pt;line-height:107%'>Pastikan
+bahwa mikrotik sudah terhubung ke internet dengan buka New Terminal lalu </span></p>
+
+<p class=MsoListParagraphCxSpLast><span lang=EN-US style='font-size:12.0pt;
+line-height:107%'>ping google.com</span></p>
+
+</div>
+
+</body>
+
+
+<!-- Mirrored from zaky.xcothree.win/project/blog/Menggunakan Mikrotik Sebagai Router Internet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:53:17 GMT -->
+</html>

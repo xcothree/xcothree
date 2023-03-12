@@ -1,0 +1,148 @@
+<html>
+    
+<!-- Mirrored from selpiie.xcothree.win/SSH.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:46:12 GMT -->
+<head>
+        <title>Selpiie Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="setting.css">
+        <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/%40fortawesome/fontawesome-free%406.1.1/css/fontawesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;family=Kaushan+Script&amp;family=Lobster&amp;family=Poppins:wght@300;400;500;600;700&amp;family=Quicksand:wght@300&amp;family=Righteous&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="index-2.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="setting.html">Setting</a></li>
+                    <li><a href="SSH.html">SSH</a></li>
+                    <li><a href="Ip.html">Ip and Network</a></li>
+                    <li><a href="Apache.html">Apache2</a></li>
+                    <li><a href="bind9.html">Bind 9</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="images/menu.png" id="menu">
+        </div>
+        <section id="setting">
+            <div class="container">
+                <div class="title-text">
+                    <p>SSH</p>
+                    <h1>SECURE SHELL</h1>
+                </div>
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="SSH%20images/1.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 1</h2>
+                        <p>Keterangan : " Gunakan command su, kemudian masukkan password root untuk masuk ke root. </p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="SSH%20images/2.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 2</h2>
+                        <p>Keterangan : " Pada step ini user diminta untuk menginputkan command <b>"apt update"</b> untuk mengecek apakah sudah diupdate atau belum.</p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="SSH%20images/3.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 3</h2>
+                        <p>Keterangan : " Pada step selanjutnya user diminta untuk menggunakan command <b>"nano /etc/apt/source.list"</b>untuk melihat daftar sumber update.</p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="SSH%20images/4.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 4</h2>
+                        <p>Keterangan : " Pada step sealnjutnya user diminta untuk menambahkan data utama secara manual dibawah text yang sudah ada, inilah source-source yang saya tambah kan <br>
+                            <br>
+                        <b>deb http://kartolo.sby.datautama.net.id/debian/ bullseye main contrib non-free
+
+                            deb http://kartolo.sby.datautama.net.id/debian/ bullseye-updates main contrib non-free
+                            
+                            deb http://kartolo.sby.datautama.net.id/debian-security/ bullseye/updates main contrib non-free</b><br>
+                            <br>
+                            kemudian takan <b>"ctrl+c dan klik y"</b>setelah itu tekan enter.</p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="SSH%20images/5.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 5</h2>
+                        <p>Keterangan : "Pada step ini user diminta untuk menginputkan command <b>"apt update"</b> untuk mengupdate source debian .</p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="SSH%20images/6.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 6</h2>
+                        <p>Keterangan : " Untuk step ini user diminta untuk menginputkan command <b>apt upgrade</b> untuk mengupgrade debian nyar
+                        </p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="SSH%20images/7.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 7</h2>
+                        <p>Keterangan : " Untuk step ini user diminta untuk menginputkan command <b>apt-get install ssh</b> yang digunakan untuk memperrmudah dalam mengontrol debian.
+                        </p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="SSH%20images/6.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 8</h2>
+                        <p>Keterangan : " Untuk step ini user diminta untuk menginputkan command <b>systemctl restart ssh</b>  untuk memulai ulang ssh(apabila berhasil tidak akan menunjukkan pesan eror), dan gunakan command <b>systemctl status ssh</b> untuk melihat status ssh.
+                        </p></div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="copyright">Copyright © 2022 - Selpiie. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px") {
+                    sideNav.style.right = "0"; 
+                    menu.src = "images/close.png"
+                }
+                else{
+                    sideNav.style.right = "-250px"
+                    menu.src = "images/menu.png"
+                }
+            }
+        </script>
+    </body>
+
+<!-- Mirrored from selpiie.xcothree.win/SSH.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:46:27 GMT -->
+</html>

@@ -1,0 +1,114 @@
+<html>
+    
+<!-- Mirrored from selpiie.xcothree.win/Ip.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:46:27 GMT -->
+<head>
+        <title>Selpiie Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="setting.css">
+        <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/%40fortawesome/fontawesome-free%406.1.1/css/fontawesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;family=Kaushan+Script&amp;family=Lobster&amp;family=Poppins:wght@300;400;500;600;700&amp;family=Quicksand:wght@300&amp;family=Righteous&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="index-2.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="setting.html">Setting</a></li>
+                    <li><a href="SSH.html">SSH</a></li>
+                    <li><a href="Ip.html">Ip and Network</a></li>
+                    <li><a href="Apache.html">Apache2</a></li>
+                    <li><a href="bind9.html">Bind 9</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="images/menu.png" id="menu">
+        </div>
+        <section id="setting">
+            <div class="container">
+                <div class="title-text">
+                    <p>IP AND NETWORK</p>
+                    <h1>SETTING IP AND NETWORK</h1>
+                </div>
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="Ip%20images/1.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 1</h2>
+                        <p>Keterangan : "Pada step ini user diminta untuk mengetikkan command <b> nano /etc/network/interfaces</b> . </p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="Ip%20images/2.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 2</h2>
+                        <p>Keterangan : " Lalu tambahkan ip address milik kita sendiri dengan
+                            <b>
+                            <br>
+                            auto enp0s3
+                            <br>
+                            iface enp0s3 inet static
+                            <br>
+                            address 192.168.1.127
+                            <br>
+                            subnet 255.255.255.0
+                            <br>
+                            gateway 192.168.1.1
+                            </b>
+                            </p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="Ip%20images/3.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 3</h2>
+                        <p>Keterangan : " Selanjutnya instal apache dengan command <b>apt install apache2</b> dan cek statusya dengan <b>systemctl status apace2</b></p></div>
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <div class="kiri">
+                        <img src="Ip%20images/4.png" style="float: left;">
+                        <div class="mar10">
+                        <h2>STEP 4</h2>
+                        <p>Keterangan : "Kemudian ketikkan command <b>systemctl status apache2</b>untuk membuktikan apakah apache2 benar benar sudah terinstal dan tidak ada error.</p></div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="copyright">Copyright © 2022 - Selpiie. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px") {
+                    sideNav.style.right = "0"; 
+                    menu.src = "images/close.png"
+                }
+                else{
+                    sideNav.style.right = "-250px"
+                    menu.src = "images/menu.png"
+                }
+            }
+        </script>
+    </body>
+
+<!-- Mirrored from selpiie.xcothree.win/Ip.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:46:40 GMT -->
+</html>

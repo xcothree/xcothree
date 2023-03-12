@@ -1,0 +1,138 @@
+* {
+ text-decoration: none;
+ margin: 0px;
+ padding: 0px;
+
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open sans',sans-serif;
+    background: #faf0e6
+
+}
+
+.wrapper {
+    width: 1350px;
+    margin: 150;
+    position: static;
+    border: #b38b6d;
+    color: #b38b6d;
+    
+}
+
+.logo a {
+    font-size: 40px;
+    font-weight: bold;
+    float: inline-start;
+    font-family: Helvetica;
+    color: #d2b48c;
+}
+
+.menu {
+    float: inline-start;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0%;
+    background: #a99a86;
+
+}
+
+nav {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #836953
+    ;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 45px;
+    color: black;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    position: static;
+    color:black;
+}
+
+nav ul li a:hover {
+    background-color: #d1bea8
+    ;
+    color: #ffebcd;
+}
+
+nav a {
+    float:left;
+    padding:15px 0px;
+    color: #b38b6d;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: inline-block;
+}
+
+.wrapper {
+    padding: 5px 0px;
+    background-color: #fff;
+}
+
+.section {
+    border:1px solid;
+    
+}
+

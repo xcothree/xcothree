@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from tersiqo.xcothree.win/apache.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:53:15 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instal Apache. | Tersiqo</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div  class="logo"><a href="#">Instal Apache.</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index-2.html" class="tbl-biru">Home</a></li>
+                    <li>&emsp;<a href="instal.html" class="tbl-biru">Instal</a></li>
+                    <li>&emsp;<a href="ssh.html" class="tbl-biru">SSH</a></li>
+                    <li>&emsp;<a href="apache.html" class="tbl-biru">Apache</a></li>
+                    <li>&emsp;<a href="bind.html" class="tbl-biru">Bind9</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <style>
+    img {
+        width: 500px;
+        height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        p {
+        font-family: 'comic sans ms';
+        text-indent: 420px;
+        }
+    </style>
+    <p>Langkah Pertama</p>
+    <img src="instaldebian/b1.jpg">
+    <p>Cek ip address di command prompt </p>
+    <p>Langkah Kedua</p>
+    <img src="instaldebian/b2.jpg">
+    <p>Ketik ip -c a dan enter dan lihat enp0s3 
+        Ketik nano /etc/network/interfaces lalu enter</p>
+    <p>Langkah Ketiga</p>
+    <img src="instaldebian/b3.jpg">
+    <p>Langkah Keempat</p>
+    <img src="instaldebian/b4.jpg">
+    <p>Ketik auto enp0s3  
+        Ketik iface enp0s3 inet static 
+        Ketik ip address kalian tapi oktat ke empat diganti bebas 
+        Ketik subnetmask 
+        Ketik gateway</p>
+    <P>Langkah Kelima</P>
+    <img src="instaldebian/b5.jpg">
+    <p>Ketik systemctl restart networking </p>
+    <p>Langkah Keenam</p>
+    <img src="instaldebian/b6.jpg">
+    <p>Klik machine dan pilih </p>
+    <p>Langkah Ketujuh</p>
+    <img src="instaldebian/b7.jpg">
+    <p>Pilih network dan ganti NAT menjadi bridged adaptor </p>
+    <p>Langkah Kedelapan</p>
+    <img src="instaldebian/b8.jpg">
+    <p>
+        Ketik systemctl restart networking 
+        </p>
+    <p>Langkah Kesembilan</p>
+    <Img src="instaldebian/b9.jpg">
+    <P>Ketikkan ip -c a dan lihat nomer 2 apakah ip sudah terganti sesuai ip yang diinginkan 10</P>
+    <p>Langkah Kesepuluh</p>
+    <img src="instaldebian/b10.jpg">
+    <p>Ketik ping ip windows  dan enter</p>
+    <p>Langkah Kesebelas</p>
+    <img src="instaldebian/b11.jpg">
+    <p>Ketik ping ip Debian kalian </p>
+    <p>Langkah Keduabelas</p>
+    <img src="instaldebian/b12.jpg">
+    <p>Download putty dan masukkan ip Debian kalian lalu klik open </p>
+    <p>Langkah Ketigabelas</p>
+    <img src="instaldebian/b13.jpg">
+    <p>Pilih accept</p>
+    <p>Langkah Keempatbelas</p>
+    <Img src="instaldebian/b14.jpg">
+    <p>Ketik nama Debian kalian yaitu nama dibelakang @ dan masukkan paswordnya juga</p>
+    <p>Langkah Kelimabelas</p>
+    <img src="instaldebian/b15.jpg">
+    <p>Ketik su dan enter dan masukkan password root</p>
+    <p>Langkah Keenambelas</p>
+    <Img src="instaldebian/b16.jpg">
+    <p>etikkan apt install apache 2 enter lalu ketik y </p>
+    <p>Langkah Ketujuhbelas</p>
+    <img src="instaldebian/b17.jpg">
+    <p>Ketik systemctl status apache2 untuk melihat apakah apache2 sudah terinstal </p>
+    <p>Langkah Kedelapanbelas</p>
+    <img src="instaldebian/b18.jpg">
+    <p>Masuk ke firefox dan ketikkan ip Debian kalian  </p>
+
+    </body>
+    
+<!-- Mirrored from tersiqo.xcothree.win/apache.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:54:34 GMT -->
+</html>

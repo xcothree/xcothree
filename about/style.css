@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    background-color: #f2f2f2;
+    min-height: 150vh;
+    color: black;
+}
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+.center{text-align: center;}
+.mar10{margin: 10px;}
+.kotak{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    padding: 10px; 
+    max-width: 480px; 
+    background-color: #b3ffff; 
+    border-radius: 10px; 
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+/* Navbar */
+.content-nav{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+    font-family: sans-serif;
+    margin: 0;
+}
+.navbar.sticky{
+    background: #bd2130;
+    padding: 20px 0;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.navbar .content-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo{
+    font-family: fantasy, sans-serif;
+    position: relative;
+    color: #262626;
+    font-weight: 500;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.logo img{
+    margin-right: 5px;
+    margin-top: 2px;
+}
+.navbar .listmenu{
+    display: inline-flex;
+}
+.listmenu li{
+    list-style: none;
+}
+.listmenu li a{
+    color: black;
+    font-size: 18px;
+    margin-left: 50px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    opacity: 100%;
+    cursor: pointer;
+}
+.listmenu li a:hover{
+    color: #fff;
+}
+.icon{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.listmenu .cancel-btn{
+    color: white;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+/* Home */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 200px;
+    margin-bottom: 100px;
+}
+.isi{
+    text-align: center;
+}
+.JudulUtama{
+    font-size: 4rem;
+}
+.TUtama{
+    font-size: 1.5rem;
+}
+.home .image img{
+    width: 24vw;
+    height: 24vw;
+    position: relative;
+    right: 0;
+    border-radius: 20px;
+}
+.active {
+    background-color: #717171;
+}
+.shapimg{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 76px;
+    z-index: 0;
+    left: 380px;
+    overflow: hidden;
+    background-size: cover;
+    right: 0;
+
+}
+
+/*Fungsi dan Tujuan*/
+.fungtu{
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 40px;
+}
+
+/*Kelebihan & Kekurangan*/
+.kelkur{
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 40px;
+}
+
+/*Alamat*/
+.alamat{
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 40px;
+}
+.mapouter{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*contact*/
+.contact{
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 40px;
+}
+.conus{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #b3ffff;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    max-width: 480px;
+}
+.conus a{
+    text-decoration: none;
+    color: rgb(0, 60, 255);
+}
+.fa-instagram{color: black;}
+.fa-youtube{color: red;}
+.conform{
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #b3ffff;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    max-width: 480px;
+}
+.formu{font-weight: 700;}
+
+/*Footer*/
+.footfix{
+    position: fixed;
+    right: 0;
+    bottom: 24px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.footfix a{
+    margin-left: 4px;
+}
+.footdwn{
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+}
+.footdwn a{text-decoration: none;}
+
+/* Size */
+@media (max-width: 1200px){
+    .content-nav{
+        padding: 0 60px;
+    }
+}
+@media (max-width: 991px){
+    .content-nav {
+        padding: 0 30px;
+    }
+    .shapimg{display: none;}
+}
+@media (max-width: 767px){
+    body.disabled {
+        overflow: hidden;
+    }
+    .icon{
+        display: block;
+    }
+    .icon.hide{
+        display: none;
+    }
+    .navbar .listmenu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        background: #bd2130;
+        transition: all 0.3s ease;
+    }
+    .navbar.show .listmenu{
+        left: 0%;
+    }
+    .navbar .listmenu li{
+        margin-top: 45px;
+    }
+    .navbar .listmenu li a{
+        color: white;
+        font-size: 23px;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .navbar.show .listmenu li a{
+        margin-left: 0px;
+    }
+    .home{
+        flex-flow: column-reverse;
+    }
+    .home .image img{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .isi{
+        margin-top: 2rem;
+    }
+    .JudulUtama{
+        font-size: 3rem;
+    }
+    .TUtama{
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+    .shapimg{display: none;}
+}

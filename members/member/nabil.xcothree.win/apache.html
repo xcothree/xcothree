@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from nabil.xcothree.win/apache.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:51:09 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilmuust</title>
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <link rel="shortcut icon" href="img/logo%20web.jpg">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="../code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- loader -->
+    <div class="bg-loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h1><a href="index-2.html">NABIL</a></h1>
+            <ul>
+                <li><a href="index-2.html">Home</a></li>
+                <li><a href="setting.html">Setting</a></li>
+                <li><a href="ssh.html">SSH</a></li>
+                <li class="active"><a href="apache.html">Apache</a></li>
+                <li><a href="bind.html">Bind</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Apache -->
+    <section class="apache">
+        <div class="container">
+            <img src="img/apache.jpg" alt="">
+            <h3>Install Apache</h3>
+            <h4 class="deskripsi">Langkah 1</h4>
+            <div class="apache1">
+            <img src="apache%20img/Ping%20debian%20ama%20windows%20yang%20bener.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan:
+                    Ketik ping di terminal debian dengan tulisan ping setelah itu alamat ip dari command prompt</p>
+            </div>
+            <h4 class="deskripsi">Langkah 2</h4>
+            <div class="apache1">
+            <img src="apache%20img/Screenshot_2.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan:
+                    Setelah itu ketik nano /etc/network/interfaces perintah ini untuk memberikan ip kita</p>
+            </div>
+            <h4 class="deskripsi">Langkah 3</h4>
+            <div class="apache1">
+            <img src="apache%20img/2.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan:
+                    Kemudian akan muncul tampilan seperti ini</p>
+            </div>
+            <h4 class="deskripsi">Langkah 4</h4>
+            <div class="apache1">
+            <img src="apache%20img/-a.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan:
+                    Sebelumnya  kalian ctrl + x, kita kan gak tau nama perangkat kita atau kode dari eternet kita</p> <p>agar tau kode dari internet kita bisa mengetikkan ip -c a</p>
+            </div>
+            <h4 class="deskripsi">Langkah 5</h4>
+            <div class="apache1">
+            <img src="apache%20img/kotak%20ijo.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan:
+                    Dan perhatikan yang no 2 yaitu enp0s3 yang bagian yang sudah saya kotak dengan warna hijau</p>
+            </div>
+            <h4 class="deskripsi">Langkah 6</h4>
+            <div class="apache1">
+            <img src="apache%20img/ip%20debian.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan:
+                    Setelah itu ketik nano /etc/network/interfaces lagi dan enter setelah masuk seperti tampilan</p> <p>langkah ke 3 tadi geser ke paling bawah dan ketik auto kode alat kita / yang depannya enp</p> <p>itu enter iface enp0s3 inet static setelah itu enter ketik address setelah itu ketikkan ip</p> <p>kalian yang ada di windows dengan menggunakan command promp tetapi bagian oktet ke 4</p> <p>harus beda setelah itu ketikkan subnetmask dan gateaway setelah itu control + x untuk keluar</p>
+            </div>
+            <h4 class="deskripsi">Langkah 7</h4>
+            <div class="apache1">
+            <img src="apache%20img/restart.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : ketik systemctl restart networking untuk melakukan perintah restart networking</p> <p>jika tidak terjadi apa apa berarti itu tidak eror</p>
+            </div>
+            <h4 class="deskripsi">Langkah 8</h4>
+            <div class="apache1">
+            <img src="apache%20img/Setting%20debian%203.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Masuk ke setting dan pilih network klik bagian Attached to itu dan pilih yang</p> <p>Bridged Adapter setelah itu klik ok</p>
+            </div>
+            <h4 class="deskripsi">Langkah 9</h4>
+            <div class="apache1">
+            <img src="apache%20img/restart.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan :  Setelah itu ketik lagi systemctl restart networking</p>
+            </div>
+            <h4 class="deskripsi">Langkah 10</h4>
+            <div class="apache1">
+            <img src="apache%20img/melihat%20ip.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Selanjutnya melihat/mengecek ip dengan kode ip -c a</p>
+            </div>
+            <h4 class="deskripsi">Langkah 11</h4>
+            <div class="apache1">
+            <img src="apache%20img/putty%20debian.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Download Putty di google setelah itu install  dan saat didalam putty masukkan</p> <p>ip debian setelah itu klik open</p>
+            </div>
+            <h4 class="deskripsi">Langkah 12</h4>
+            <div class="apache1">
+            <img src="apache%20img/Login%20putty.jpg" alt="">
+            </div>
+            <div class="kolom">
+                <p>Penjelasan : Setelah itu masukkan usernam, password usernam setelah sudah login ketik su</p> <p>untuk masuk ke root dan masukkan sandi root</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer>
+        <div class="container">
+            <small>Copyright &copy; 2022 - Nabil All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    <script text="text/javascript">
+        $(document).ready(function(){
+            $(".bg-loader").hide();
+        })
+    </script>
+</body>
+
+<!-- Mirrored from nabil.xcothree.win/apache.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:52:28 GMT -->
+</html>

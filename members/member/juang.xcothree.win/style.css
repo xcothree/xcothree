@@ -1,0 +1,231 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+ }
+ a{
+color: inherit;
+text-decoration: none;
+    }
+.medsos {
+padding:5px 0;
+background-color:   #97C4B8;
+}
+.medsos ul li {
+display: inline-block;
+color: #fff;
+margin-right: 10px;
+} 
+.wrapper {
+    width: 1250px;
+    margin: auto;
+    position: relative;
+    background: #fff;
+}
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: #916BBF;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 70px;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    background: #FFFFFF;
+    z-index: 1;
+    border-bottom:1px solid #364f6b;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 15px 20px 15px;
+    text-decoration: none;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline 3px #916BBF ;
+}
+.active {
+    background-color: #916BBF;
+}
+.banner {
+    height: 60vh;
+    background-image: url('debian_logo.webp');
+    background-size:auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner:after {
+    content:'';
+    display: block;
+    position: absolute;
+    top: 0;
+    Left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(201, 160, 220, 0.7)
+}
+.banner h2{
+    color:#fff;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid #fff;
+}
+section {
+    padding:50px 0px;
+}
+section h3 {
+    text-align: center;
+    color: #916BBF;
+    margin-bottom: 20px;
+    pad: 20px;
+}
+footer {
+    padding:3px 0;
+    background-color: #333;
+    color: #fff; 
+    text-align: center;
+
+}
+    
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.gap {
+  transition: transform .2s ease;
+  max-width: 240px;
+  flex-grow: 1;
+  padding: 40px;
+  /* properti lainnya */
+  background-color: #FBDD1C;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.gap:hover {
+  color: rgb(255, 97, 5);
+  transform: scale(1.15);
+  box-shadow: 0px 0px 20px;
+}
+.service{
+    padding-bottom: 100px;
+}
+.about p {
+    color: #666;
+    word-spacing: 2px;
+    line-height: 25px;
+    width: 1300px;
+    position: static;
+}
+
+
+
+.animasi {
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.tombol-aktif {
+    padding: 10px 40px;
+    margin-top: 250px;
+    border-radius: 10px;
+    float:inline-end;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.biru {
+    background-color: #916BBF;
+    border-bottom:  5px solid #3D2C8D;
+    text-shadow: 0px -2px #97C4B8;
+}
+
+.tombol-aktif:active {
+    transform: translate(100px,53px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+.service {
+    background-color: #f9f9f9;
+    height: 150px;
+}
+.box {
+    color: #3D2C8D;
+    width: 1450px;
+}
+.box .col-4 {
+    width: 24%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    float: right;
+}
+.icon {
+    width: 70px;
+    height: 70px;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.box .col-4 h4{
+    margin: 20px 0;
+}
+
+
+
+h4 {
+    font-size: large;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size:large; 
+    color: #808080;
+}
+

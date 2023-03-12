@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from zaky.xcothree.win/project/Laporan/Bind.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:52:57 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Zaky Leo</title>
+    <link rel="shortcut icon" href="../Media/image/LogoZakyLeo.html">
+    <link rel="stylesheet" href="Laporan.css">
+    <script src="../../../kit.fontawesome.com/22a69e2285.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="content-nav">
+            <div class="logo">
+                <p>Zaky Leo</p>
+            </div>
+            <ul class="listmenu">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="../index-2.html">Home</a></li>
+                <li><a href="../project.html">Project</a></li>
+                <li><a href="../about.html">About</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!--Home-->
+    <nav class="home">
+        <div class="content">
+            <h1 class="JudulUtama">Setting Bind9</h1>
+            <div class="lap">
+                <p class="a">1. Pertama, gunakan command <span class="red">cd /etc/bind</span> untuk pergi ke bind. Lalu copy <span class="gren">db.127</span> ke <span class="gren">db.58</span> dengan command <span class="red">cp db.127 db.58</span></p>
+                <img src="GambarBind/image1.png"  class="b">
+            </div>
+            <div class="lap">
+                <p class="a">2. Lalu copy <span class="gren">db.local</span> ke <span class="gren">db.zakyt3</span> dengan command <span class="red">cp db.local db.zakyt3</span></p>
+                <img src="GambarBind/image2.png"  class="b">
+            </div>
+            <div class="lap">
+                <p class="a">3. Berikutnya, buka <span class="red">nano named.conf.default-zones</span> lalu ubah <span class="prp">localhost</span> ke <span class="prp">zakydomain.care</span> , <span class="prp">db.local</span> ke <span class="prp">db.zakyt3</span> , <span class="prp">127</span> ke <span class="prp">192</span> dan <span class="prp">db.127</span> ke <span class="prp">db.58</span> lalu simpan</p>
+                <img src="GambarBind/image3.png"  class="b">
+                <img src="GambarBind/image4.png"  class="b">
+            </div>
+            <div class="lap">
+                <p class="a">4. Kemudian, buka <span class="red">nano db.zakyt3</span> lalu ubah <span class="prp">localhost</span> ke <span class="prp">zakydomain.care</span> dan <span class="prp">127.0.0.1</span> ke <span class="prp">192.168.1.58</span> lalu simpan </p>
+                <img src="GambarBind/image5.png"  class="b">
+                <img src="GambarBind/image6.png"  class="b">
+            </div>
+            <div class="lap">
+                <p class="a">5. Selanjutnya, masuk ke <span class="red">nano named.conf.options</span> lalu ubah <span class="prp">127.0.0.1</span> ke <span class="prp">192.168.1.58</span> lalu simpan</p>
+                <img src="GambarBind/image7.png"  class="b">
+            </div>
+            <div class="lap">
+                <p class="a">6. Kemudian, restart bind9 dengan command <span class="red">systemctl restart bind9</span> . Lalu gunakan command <span class="red">nslookup</span> lalu masukkan <span class="prp">zakydomain.care</span> untuk mengecek alamat ip</p>
+                <img src="GambarBind/image8.png"  class="b">
+            </div>
+            <div class="lap">
+                <p class="a">7. Lalu buka <span class="red">nano /etc/resolv.conf</span> . Selanjutnya tambahkan</p>
+                <p class="b"><span class="prp">search zakydomain.care</span></p>
+                <p class="b"><span class="prp">nameserver 192.168.1.58</span></p>
+                <img src="GambarBind/image9.png"  class="b">
+            </div>
+            <div class="lap">
+                <p class="a">8. Berikutnya, masukkan command <span class="red">nslookup</span> untuk melihat perubahan</p>
+                <img src="GambarBind/image10.png"  class="b">
+            </div>
+        </div>
+    </nav>
+    <!-- Add JavaScript-->
+    <script src="script.js"></script>
+</body>
+
+<!-- Mirrored from zaky.xcothree.win/project/Laporan/Bind.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:53:13 GMT -->
+</html>
